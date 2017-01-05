@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\dialog_button_middle.xml",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable\\dialog_button_middle.xml"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\dialog_window_bg.xml",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable\\dialog_window_bg.xml"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rectangle_grey_bg.xml",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable\\rectangle_grey_bg.xml"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\dialog_button_left.xml",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable\\dialog_button_left.xml"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ui_waiting_progress.xml",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable\\ui_waiting_progress.xml"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\dialog_window_bg2.xml",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable\\dialog_window_bg2.xml"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\ui_local_download_progress_background.xml",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable\\ui_local_download_progress_background.xml"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\dialog_buton_right.xml",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable\\dialog_buton_right.xml"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rectangle_white_bg.xml",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable\\rectangle_white_bg.xml"
+    }
+]

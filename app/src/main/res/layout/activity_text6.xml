@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="Android-UI效果之Canvas绘图篇"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+
+    <!--<SeekBar-->
+        <!--android:id="@+id/seekbar_self"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="6dp"-->
+        <!--android:layout_marginBottom="18dp"-->
+        <!--android:max="100"-->
+        <!--android:paddingLeft="24dp"-->
+        <!--android:paddingRight="24dp"-->
+        <!--android:progress="10"-->
+        <!--android:progressDrawable="@drawable/layertext2"-->
+        <!--android:thumb="@drawable/trslider" />-->
+
+
+    <com.example.administrator.text1.utils.view.TextUiCanvas
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="drop_down_list_attr">
+        <attr name="isHeaderRefresh" format="boolean" />
+        <attr name="isFooterRefresh" format="boolean" />
+        <attr name="isAutoFooterRefresh" format="boolean" />
+        <attr name="headArrowDrawable" format="reference" />
+        <attr name="headerIndeterminateDrawable" format="reference" />
+        <attr name="footerIndeterminateDrawable" format="reference" />
+        <attr name="headerTextColor" format="color|reference" />
+        <attr name="headerSecondTextColor" format="color|reference" />
+        <attr name="footerTextColor" format="color|reference" />
+        <attr name="headerTextSize" format="dimension" />
+        <attr name="headerSecondTextSize" format="dimension" />
+        <attr name="footerTextSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="LockPatternView">
+        <attr name="aspect">
+            <enum name="square" value="0" />
+            <enum name="lockWidth" value="1" />
+            <enum name="lockHeight" value="2" />
+        </attr>
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="wrongLineColor" format="color" />
+        <attr name="circleNormal" format="reference" />
+        <attr name="circleSelect" format="reference" />
+        <attr name="circleError" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="LockPatternPreView">
+        <attr name="radius" />
+        <attr name="fillColor" />
+        <attr name="strokeColor" />
+        <attr name="strokeWidth" />
+        <attr name="cellPadding" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CircleViewPager">
+        <attr name="radius" />
+        <attr name="fillColor" />
+        <attr name="pageColor" />
+        <attr name="strokeColor" />
+        <attr name="strokeWidth" />
+        <attr name="circlePadding" format="dimension" />
+    </declare-styleable>
+
+    <attr name="radius" format="dimension" />
+    <attr name="fillColor" format="color" />
+    <attr name="pageColor" format="color" />
+    <attr name="strokeColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    
+    
+    
+
+</resources>

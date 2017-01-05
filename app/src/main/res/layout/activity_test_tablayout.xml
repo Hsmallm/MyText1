@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="测试TabLayout相关使用"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/test_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingRight="50dp"
+        app:tabMode="scrollable"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/blue"
+        app:tabTextColor="@color/black_txt"
+        app:tabSelectedTextColor="@color/blue"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/trc_home_drop_down"/>
+
+        <View
+            android:id="@+id/test_img"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="?android:attr/selectableItemBackground"/>
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/test_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

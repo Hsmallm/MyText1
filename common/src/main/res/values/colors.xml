@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="light_green">#69AC7D</color>
+    <color name="green_text">#016723</color>
+     <color name="black_txt">#666666</color>
+     <color name="orange_txt">#ff6600</color>
+     <color name="grey">#999999</color>
+    <!-- drop down list header font color -->
+    <color name="header_font_color">#000000</color>
+    <!-- drop down list header second font color -->
+    <color name="header_second_font_color">#000000</color>
+    <!-- drop down list footer font color -->
+    <color name="footer_font_color">#000000</color>
+    <!-- 白色半透明 -->
+    <color name="half_transparent">#3fffffff</color>  
+    <!-- 黑色半透明 -->
+    <color name="transparent2">#50000000</color>  
+    <!-- 密码图案 -->
+    <!-- 绿色，密码输入正确 -->
+    <color name="default_lock_preview_view_fill_color">#05ffe6</color>
+    <color name="default_lock_preview_view_stroke_color">#ffffff</color>
+    <!-- 红色，密码输入错误 -->
+    <color name="default_lock_patten_view_fill_wrong_color">#aa0e0e</color>
+    
+    
+	<color name="default_circle_indicator_fill_color">#0033ff</color>
+    <color name="default_circle_indecator_stroke_color">#777777</color>
+    <color name="default_circle_indicator_page_color">#ffffff</color>
+    
+    <color name="color_00a236">#00a236</color>
+    <color name="color_ff6d00">#ff6d00</color>
+    <color name="color_e14d1f">#f25a2b</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_c4c4c4">#c4c4c4</color>
+    <color name="color_dbdbdb">#dbdbdb</color>
+    <color name="color_016723">#016723</color>
+    <color name="color_342c2c">#342c2c</color>
+</resources>

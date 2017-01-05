@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.text1">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.google.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+
+    <application
+        android:name=".utils.ThApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.testTab.testTabLayout.TestTabLayout"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.-->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".ui.testPageAnimation.TestPageAnimation2" />
+        <activity android:name=".ui.testActivity.SecondActivity" />
+        <activity android:name=".ui.testWebView.TextWebViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.testApplication.TextApplication2" />
+        <activity android:name=".ui.test3D.Test3DGallery" />
+        <activity
+            android:name=".ui.testAndroidAttribute.TestWindowSoftInputMode2"
+            android:windowSoftInputMode="stateUnchanged" />
+        <activity android:name=".ui.testActivity.testIntentFlagsAndLaunchMode.TestActivity2" />
+        <activity android:name=".ui.testActivity.testIntentFlagsAndLaunchMode.TestActivity3" />
+        <activity android:name=".ui.testActivity.testIntentFlagsAndLaunchMode.TestActivity4" />
+        <activity android:name=".ui.testActivity.testIntentFlagsAndLaunchMode.TestFinishActivity" />
+        <service android:name=".download.service.DownloadService" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+
+        <!-- UMeng -->
+        <!--<meta-data
+            android:name="UMENG_APPKEY"
+            android:value="575f767ae0f55ac9df000b07" />-->
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3mMHMQvSBMRSoNFPHOcN2GwvPtoGstA4" />
+
+        <!--Push-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57bc0908e0f55a71b6000398" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="27fa4feb78cd1d86ab5fbe43f158a789" />
+    </application>
+
+</manifest>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_window_bg"
+    android:splitMotionEvents="false" >
+
+    <LinearLayout
+        android:id="@+id/dialog_content_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp" >
+
+        <TextView
+            android:id="@+id/ui_dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="100dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textIsSelectable="false"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ui_default_confirm_dialog_middle_button"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:background="@drawable/dialog_button_middle"
+        android:textColor="@color/dialog_button_text_color"
+        android:visibility="gone"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/ui_default_confirm_dialog_two_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:splitMotionEvents="false" >
+
+        <Button
+            android:id="@+id/ui_default_confirm_dialog_positive_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_button_left"
+            android:textColor="@color/dialog_button_text_color"
+            android:visibility="gone"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/ui_default_confirm_dialog_negative_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_buton_right"
+            android:textColor="@color/dialog_button_text_color"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

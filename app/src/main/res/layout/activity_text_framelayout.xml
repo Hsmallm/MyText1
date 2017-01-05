@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.text1.ui.testframelayout.TextCircleAnimationFrame
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_txt"/>
+
+    <com.example.administrator.text1.ui.testframelayout.TextFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <View
+            android:id="@+id/rotate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/check_in_background"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/check_in_forground"/>
+
+    </com.example.administrator.text1.ui.testframelayout.TextFrameLayout>
+
+</com.example.administrator.text1.ui.testframelayout.TextCircleAnimationFrame>

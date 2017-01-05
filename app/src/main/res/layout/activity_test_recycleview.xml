@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/frgBgColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/test_recycleview_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="测试RecycleView的分类布局"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/test_recycleview"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/frgBgColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:text="测试自定义布局的九风格布局"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+
+    <com.example.administrator.text1.utils.view.TextSimpleGridLayout
+        android:id="@+id/gridolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:grid_column="3"
+        app:grid_divider_width="2dp"
+        app:grid_item_height_width_ratio="0.849162"/>
+
+</LinearLayout>

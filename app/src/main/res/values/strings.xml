@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">测试APP</string>
+    <string name="copy">复制</string>
+
+    <!-- 手势密码 -->
+    <string name="set_gesture_passwd">设置手势密码</string>
+    <string name="forget_gesture_passwd">忘记手势密码</string>
+    <string name="other_user_login">用其他用户登录</string>
+    <string name="draw_gesture_passwd">绘制手势密码</string>
+    <string name="draw_gesture_paswd_again">再次绘制手势密码</string>
+    <string name="gesture_tip_001">至少链接4个点，请重新输入</string>
+    <string name="gesture_tip_002">两次绘制手势密码不一致，请重新输入</string>
+    <string name="gesture_tip_003">设置成功</string>
+    <string name="lockscreen_access_pattern_too_short">至少连接4个点，请重新输入</string>
+    <string name="lockscreen_access_intro_header">绘制解锁密码</string>
+    <string name="lockscreen_access_entered_header">图案已记录</string>
+    <string name="lockscreen_access_need_to_confirm">再次绘制手势密码</string>
+    <string name="lockscreen_access_need_to_unlock_wrong">两次绘制手势密码不一致，请重新输入</string>
+    <string name="lockscreen_access_confirmed_header">设置成功</string>
+    <string name="lockscreen_access_recording_inprogress">完成后松开手指</string>
+    <string name="unlockScrren_access_hands_pwd_error">您已连续5次输错手势，请重新登录</string>
+    <string name="unlockScrren_access_success">解锁成功</string>
+    <string name="unlockScrren_access_pattern_times">密码错误，还可输入%s次</string>
+    <string name="unlockScrren_access_pattern_no_time">密码错误，请再试一次</string>
+
+    <item type="id" name="tag_first"></item>
+    <item type="id" name="tag_second"></item>
+    <item type="id" name="tag_three"></item>
+    <item type="id" name="tag_width"></item>
+    <item type="id" name="tag_height"></item>
+    <item type="id" name="tag_select"></item>
+</resources>

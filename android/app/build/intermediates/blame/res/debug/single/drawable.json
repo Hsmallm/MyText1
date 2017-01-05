@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "E:\\Text1\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\share_via_barcode.png",
+        "source": "E:\\Text1\\android\\app\\src\\main\\res\\drawable\\share_via_barcode.png"
+    },
+    {
+        "merged": "E:\\Text1\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\launcher_icon.png",
+        "source": "E:\\Text1\\android\\app\\src\\main\\res\\drawable\\launcher_icon.png"
+    }
+]

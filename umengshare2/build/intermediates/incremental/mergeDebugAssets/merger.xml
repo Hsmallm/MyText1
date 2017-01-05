@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\Text1\umengshare2\assets"/><source path="E:\Text1\umengshare2\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\Text1\umengshare2\src\debug\assets"/></dataSet></merger>

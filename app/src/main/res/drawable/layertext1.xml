@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Layer:这个用过photoshop的朋友，应该很好理解，用于实现图层效果 -->
+
+    <!-- item1:底层 -->
+    <item>
+        <bitmap android:src="@drawable/untitled"
+            android:gravity="center" />
+    </item>
+    <!-- item2：中间层-->
+    <item>
+        <bitmap android:src="@drawable/untitled2"
+            android:gravity="center" />
+    </item>
+    <!-- item3：First第一层-->
+    <item>
+    <bitmap android:src="@drawable/account_tcoin"
+        android:gravity="center" />
+    </item>
+
+</layer-list>

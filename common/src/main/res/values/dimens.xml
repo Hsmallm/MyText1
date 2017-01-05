@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- 下拉刷新 -->
+    <dimen name="header_padding_top">10dp</dimen>
+    <dimen name="header_padding_bottom">10dp</dimen>
+    <dimen name="header_release_min_distance">20dp</dimen>
+    <dimen name="header_progress_bar_height">36dp</dimen>
+    <dimen name="footer_progress_bar_height">36dp</dimen>
+    <dimen name="footer_button_margin_left">8dp</dimen>
+    <dimen name="footer_button_height">48dp</dimen>
+    <dimen name="default_header_text_size">18sp</dimen>
+    <dimen name="default_header_second_text_size">15sp</dimen>
+    <dimen name="default_footer_text_size">18sp</dimen>
+ 	 <!--  图案密码 -->
+    <dimen name="default_lock_prvview_radius">5dp</dimen>
+    <dimen name="default_lock_preview_stroke_width">1.5dp</dimen>
+    <dimen name="default_lock_preview_cell_padding">1dp</dimen>
+    <!-- 无限循环ViewPager -->
+    <dimen name="default_circle_indicator_radius">4dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1.5dp</dimen>
+    <dimen name="default_circle_indicator_circle_padding">5dp</dimen>
+    
+    
+
+</resources>

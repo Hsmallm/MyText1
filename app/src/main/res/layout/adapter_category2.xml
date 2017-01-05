@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mz"/>
+
+    <LinearLayout
+        android:id="@+id/cay2_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/cay2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美妆护肤"
+            android:textColor="@color/frgTxtColor"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/cay2_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="彩妆 美发 防嗮"
+            android:textColor="@color/font_normal"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\dialog_left_btn_unselect.9.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\dialog_left_btn_unselect.9.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\dialog_right_btn_select.9.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\dialog_right_btn_select.9.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\slip_off.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\slip_off.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\indicator_code_lock_point_area_red_holo.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\indicator_code_lock_point_area_red_holo.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\indicator_code_lock_point_area_out_red_holo.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\indicator_code_lock_point_area_out_red_holo.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\text_transparent_bg.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\text_transparent_bg.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\indicator_code_lock_point_area_default_holo.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\indicator_code_lock_point_area_default_holo.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\dialog_right_btn_unselect.9.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\dialog_right_btn_unselect.9.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\sms_code_butn_bg.9.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\sms_code_butn_bg.9.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\dialog_middle_btn_unselect.9.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\dialog_middle_btn_unselect.9.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\hk.jpg",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\hk.jpg"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\clear_edittext_selector.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\clear_edittext_selector.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\indicator_code_lock_point_area_out_green_holo.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\indicator_code_lock_point_area_out_green_holo.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\slip.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\slip.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\indicator_code_lock_point_area_green_holo.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\indicator_code_lock_point_area_green_holo.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\dialog_middle_btn_select.9.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\dialog_middle_btn_select.9.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\login_butn_bg.9.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\login_butn_bg.9.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\slip_on.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\slip_on.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\ui_custom_gray_button.9.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\ui_custom_gray_button.9.png"
+    },
+    {
+        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\dialog_left_btn_select.9.png",
+        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\dialog_left_btn_select.9.png"
+    }
+]

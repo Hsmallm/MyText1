@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+注解：
+<set>:表示animatorSet动画
+<objectAnimator>:表示objectAnimator动画
+<animator>:表示ValueAnimator动画
+ordering="sequentially":表示里面动画的播放属性为循序依次执行
+ordering="together":表示里面动画的播放属性为同时执行
+-->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+
+    <objectAnimator
+        android:duration="3000"
+        android:propertyName="translationX"
+        android:valueFrom="-500"
+        android:valueTo="0"
+        android:valueType="floatType" />
+
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="3000"
+            android:valueFrom="0"
+            android:valueTo="360"
+            android:valueType="floatType"
+            android:propertyName="rotation"/>
+
+        <set android:ordering="sequentially">
+            <objectAnimator
+                android:duration="1500"
+                android:valueType="floatType"
+                android:valueFrom="1"
+                android:valueTo="0"
+                android:propertyName="alpha"/>
+
+            <objectAnimator
+                android:duration="1500"
+                android:valueType="floatType"
+                android:valueFrom="0"
+                android:valueTo="1"
+                android:propertyName="alpha"/>
+        </set>
+
+    </set>
+
+</set>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_investRecord_title"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:layout_height="90dp"
+    tools:layout_width="120dp" >
+
+    <!--<ImageView-->
+    <!--android:id="@+id/icon"-->
+    <!--style="@style/AccountGridIconNew"-->
+    <!--tools:src="@drawable/account_invest_records_v" />-->
+    <ImageView
+        android:id="@+id/grid_icon"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:src="@drawable/trfriends" />
+
+    <TextView
+        android:id="@+id/grid_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="20dp"
+        android:textColor="@color/font_black"
+        android:textSize="13dp"
+        tools:text="投资记录" />
+
+</FrameLayout>

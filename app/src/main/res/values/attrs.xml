@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyView">
+        <attr name="myColor" format="color"></attr>
+        <attr name="myTextSize" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="TextSimpleGridLayout">
+        <attr name="grid_column" format="integer"/>
+        <attr name="grid_row_height" format="dimension"/>
+        <attr name="grid_item_height_width_ratio" format="float"/>
+        <attr name="grid_divider_width" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextFrameLayout">
+        <attr name="text_baseonwith" format="boolean"/>
+        <attr name="text_ratio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlideMenu">
+        <attr name="slide_menu_padding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="Indicator">
+        <attr name="testcolor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TestIndicator">
+        <attr name="visib_count" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="TopBar">
+        <attr name="titleText" format="string"/>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="titleTxtColor" format="color"/>
+
+        <attr name="leftText" format="string"/>
+        <attr name="leftTextColor" format="reference|color"/>
+        <attr name="leftBackground" format="reference|color"/>
+        <attr name="leftTextSize" format="dimension"/>
+
+        <attr name="rightText" format="string"/>
+        <attr name="rightTextColor" format="reference|color"/>
+        <attr name="rightBackground" format="reference|color"/>
+        <attr name="rightTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="FixRatio">
+        <attr name="ratio" format="float"/>
+        <attr name="bathOnWidth" format="boolean"/>
+        <attr name="matchDrawableRatio" format="boolean"/>
+    </declare-styleable>
+    
+    <declare-styleable name="SlipleGrid">
+        <attr name="grid_row2" format="integer"/>
+        <attr name="grid_column2" format="integer"/>
+        <attr name="grid_row_height2" format="dimension"/>
+    </declare-styleable>
+
+</resources>

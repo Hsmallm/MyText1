@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- layer(图层)绘图之- SeekBar进度条背景颜色绘图 -->
+    <!-- item:图层的意思 -->
+    <item android:id="@android:id/background">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="line">
+            <stroke
+                android:width="1dp"
+                android:color="@color/grey">
+            </stroke>
+        </shape>
+        </item>
+
+    <item android:id="@android:id/progress">
+        <!-- clip:剪切、裁剪的意思（这里就是剪切掉下面这一红线图层）-->
+        <clip>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="line">
+            <stroke
+                android:width="1dp"
+                android:color="@color/red"
+                >
+            </stroke>
+        </shape>
+        </clip>
+    </item>
+
+</layer-list>

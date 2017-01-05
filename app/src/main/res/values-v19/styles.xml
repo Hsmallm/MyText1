@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--设置沉浸状态栏的效果-->
+    <style name="AppStatusBarTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="TestActivity1" parent="AppTheme">
+    </style>
+</resources>

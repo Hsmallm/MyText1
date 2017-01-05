@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Setting</string>
+    <string name="header_default_text">点击可以刷新</string>
+    <string name="header_pull_text">下拉即可更新&#8230;</string>
+    <string name="header_release_text">松开可以刷新</string>
+    <string name="header_loading_text">加载中&#8230;</string>
+    <string name="footer_default_text">更多</string>
+    <string name="footer_loading_text">加载中&#8230;</string>
+    <string name="footer_no_more_text">没有更多了！</string>
+    <string name="update_at">最后更新:&#160;</string>
+    <string name="image_content">image_content</string>
+
+    <!-- 手势密码 -->
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    
+    <!-- 分享 -->
+    <string name="SinaWeibo">新浪微博</string>
+     <string name="Wechat">微信好友</string>
+    <!-- 分享内容 -->
+    <string name="share_content" formatted="false">我在泰和网投资，轻松赚取10%~14.4%年化收益 http://www.360taihe.com</string>
+    
+     <!-- 分享平台 -->
+    <string-array name="id_share_name_array">
+        <item>微信好友</item>
+        <item>新浪微博</item>
+    </string-array>
+    
+      <!-- 分享平台tag -->
+    <string-array name="id_share_name_tag_array">
+        <item>Wechat</item>
+        <item>SinaWeibo</item>
+    </string-array>
+    
+    <!-- 确定按钮 -->
+    <string name="confirm_button_text">确定</string>
+
+    <!-- 查询按钮 -->
+    <string name="query_button_text">查询</string>
+
+    <!-- 下一步按钮 -->
+    <string name="next_step_button_text">下一步</string>
+
+    <!-- 完成按钮 -->
+    <string name="complete_button_text">完成</string>
+
+    <!-- 取消按钮 -->
+    <string name="cancel_button_text">取消</string>
+    <!-- 等待加载数据时提示 -->
+    <string name="ui_default_waiting_message">加载中&#8230;</string>
+
+    <!-- 网络连接超时时提示 -->
+    <string name="common_tips_1000">通讯超时，资金类交易请及时核对账户信息！</string>
+
+    <!-- 网络连接失败时提示 -->
+    <string name="common_tips_1001">网络请求失败，请检查您的网络状态后重试。</string>
+
+    <!-- 退出登录提示 -->
+    <string name="common_tips_1002">您确定要退出登录吗？</string>
+
+    <!-- 退出客户端提示 -->
+    <string name="common_tips_1003">您确定要退出？</string>
+
+    <!-- 登录超时提示 -->
+    <string name="common_tips_1004">登录超时，请重新登录。</string>
+    
+    <!-- 登录超时提示 -->
+    <string name="common_tips_1005">登录用户名错误。</string>
+    
+    <!-- 登录超时提示 -->
+    <string name="common_tips_1006">登录密码错误。</string>
+    
+    <!-- 登录超时提示 -->
+    <string name="common_tips_1007">数据异常。</string>
+    
+    <string name="common_tips_1008">输入金额不能为0</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:topbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.administrator.text1.ui.testUITopBar.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        topbar:leftBackground="@color/blue"
+        topbar:leftTextColor="@color/white"
+        topbar:leftText="Back"
+        topbar:leftTextSize="10sp"
+        topbar:rightBackground="@color/blue"
+        topbar:rightTextColor="@color/white"
+        topbar:rightText="More"
+        topbar:rightTextSize="10sp"
+        topbar:titleText="Title"
+        topbar:titleTxtColor="@color/black"
+        topbar:titleTextSize="12sp">
+
+    </com.example.administrator.text1.ui.testUITopBar.TopBar>
+</LinearLayout>

@@ -1,0 +1,5 @@
+include ':app', ':common', ':umengshare2', ':libzxing', ':PushSDK'
+
+include ':library'
+include ':library'
+include ':fancyCoverFlow_library'

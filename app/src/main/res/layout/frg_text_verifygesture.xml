@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/trphoto"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="验证手势密码"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+    <com.seaway.android.common.widget.LockPatternView
+        android:id="@+id/lockPatternView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        app:circleError="@drawable/gesture_point_error_set"
+        app:circleNormal="@drawable/gesture_point_default_set"
+        app:circleSelect="@drawable/gesture_point_select_set"
+        app:lineColor="#05ffe6"
+        app:lineWidth="5dp"
+        app:wrongLineColor="#aa0e0e"/>
+
+
+</LinearLayout>

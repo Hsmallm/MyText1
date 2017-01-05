@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_info_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:background="#005555">
+
+
+    <FrameLayout style="@style/AccontItem">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:drawablePadding="5dp"
+            android:text="账户余额"
+            android:textColor="@color/font_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/account_detail_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="5dp"
+            android:textColor="@color/font_white"
+            android:textSize="15sp"
+            tools:text="0.00" />
+
+        <View style="@style/AccountDivider" />
+    </FrameLayout>
+
+    <FrameLayout style="@style/AccontItem">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:drawablePadding="5dp"
+            android:text="投资资金"
+            android:textColor="@color/font_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/account_detail_investing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="5dp"
+            android:textColor="@color/font_white"
+            android:textSize="15sp"
+            tools:text="0.00" />
+
+        <View style="@style/AccountDivider" />
+    </FrameLayout>
+
+    <FrameLayout style="@style/AccontItem">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:drawablePadding="5dp"
+            android:text="待收收益"
+            android:textColor="@color/font_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/account_detail_interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="5dp"
+            android:textColor="@color/font_white"
+            android:textSize="15sp"
+            tools:text="0.00" />
+
+        <View style="@style/AccountDivider" />
+    </FrameLayout>
+
+    <FrameLayout style="@style/AccontItem">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:drawablePadding="5dp"
+            android:text="e取持有"
+            android:textColor="@color/font_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/account_detail_equ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="5dp"
+            android:textColor="@color/font_white"
+            android:textSize="15sp"
+            tools:text="0.00" />
+
+        <View style="@style/AccountDivider" />
+    </FrameLayout>
+
+    <FrameLayout style="@style/AccontItem">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:drawablePadding="5dp"
+            android:text="冻结资金"
+            android:textColor="@color/font_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/account_detail_freeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="5dp"
+            android:textColor="@color/font_white"
+            android:textSize="15sp"
+            tools:text="0.00" />
+
+        <View style="@style/AccountDivider" />
+    </FrameLayout>
+
+    <FrameLayout style="@style/AccontItem">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:drawablePadding="5dp"
+            android:text="我的T币"
+            android:textColor="@color/font_white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/account_detail_tcoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:drawablePadding="5dp"
+            android:textColor="@color/font_white"
+            android:textSize="15sp"
+            tools:text="0个" />
+
+        <View style="@style/AccountDivider" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_collapse"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:padding="12dp"
+        android:src="@drawable/arrow_up" />
+</LinearLayout>
