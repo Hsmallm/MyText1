@@ -1,6 +1,8 @@
 package com.example.administrator.text1.api;
 
+import com.example.administrator.text1.BuildConfig;
 import com.example.administrator.text1.model.IndexModel;
+import com.example.administrator.text1.model.NewVersionInfoModel;
 import com.example.administrator.text1.model.address.AddressDetailsModel;
 import com.example.administrator.text1.model.address.AreaListModel;
 import com.example.administrator.text1.utils.http.HttpClient;
@@ -24,7 +26,7 @@ public class AddressApi {
     public static void init() {
         retrofit = new Retrofit.Builder()
                 .client(HttpClient.getInstance())
-                .baseUrl("http://app.trc.com/trcapi/v1/")
+                .baseUrl("http://172.30.250.111/")
                 //增加返回值为Gson的支持(以实体类返回)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
@@ -84,5 +86,15 @@ public class AddressApi {
 
     public static void getIndexList(RestCallback<IndexModel> callback){
         serves.getIndexList().enqueue(callback);
+    }
+
+    /**
+     * 版本更新
+     * @param callback
+     */
+    public static void getVersionUpdater(RestCallback<NewVersionInfoModel> callback) {
+        String versionName = BuildConfig.VERSION_NAME;
+        String platformId = "id_695E61DCBE8A4F2BA256D3B76AD5D392-" + versionName;
+        serves.getVersionUpdater(platformId).enqueue(callback);
     }
 }

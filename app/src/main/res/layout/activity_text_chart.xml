@@ -7,16 +7,93 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/blue"
+        android:background="#ff795f"
         android:gravity="center"
         android:text="测试自定义图表"
         android:textColor="@color/white"
         android:textSize="20dp" />
 
-    <com.example.administrator.text1.ui.testCanvas.testCanvas.TestCanvasToChart
-        android:id="@+id/textChart"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/black"/>
+        android:layout_height="wrap_content">
 
+        <com.example.administrator.text1.ui.testCanvas.testCanvas.TestCanvasToChart
+            android:id="@+id/textChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#ff795f" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5.00"
+                    android:textColor="@color/white"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textColor="@color/white"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <com.example.administrator.text1.ui.testRunningTxt.RunningTextView
+                android:id="@+id/add_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+0.00%"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年化收益率"
+                android:textColor="#80ffffff"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="500000.00"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余金额"
+                android:textColor="#80ffffff"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roll_bg"
+                android:layout_marginTop="100dp"
+                android:padding="10dp"
+                android:text="刷新"
+                android:textColor="@color/white"
+                android:textSize="14dp"/>
+        </LinearLayout>
+    </FrameLayout>
 </LinearLayout>

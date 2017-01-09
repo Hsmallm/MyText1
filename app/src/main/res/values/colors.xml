@@ -24,6 +24,7 @@
     <color name="homepage_txt_center_below">#c9c9c9</color>
 
     <color name="user_info_set_color">#0086d1</color>
+    <color name="black_transparent">#50000000</color><!--黑色半透明-->
 
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>

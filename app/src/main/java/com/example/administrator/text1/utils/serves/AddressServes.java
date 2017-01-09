@@ -1,21 +1,22 @@
 package com.example.administrator.text1.utils.serves;
 
-        import com.example.administrator.text1.model.IndexModel;
-        import com.example.administrator.text1.model.address.AddressDetailsModel;
-        import com.example.administrator.text1.model.address.AddressListModel;
-        import com.example.administrator.text1.model.address.AreaListModel;
+import com.example.administrator.text1.model.IndexModel;
+import com.example.administrator.text1.model.NewVersionInfoModel;
+import com.example.administrator.text1.model.address.AddressDetailsModel;
+import com.example.administrator.text1.model.address.AddressListModel;
+import com.example.administrator.text1.model.address.AreaListModel;
 
-        import okhttp3.RequestBody;
-        import retrofit2.Call;
-        import retrofit2.http.Field;
-        import retrofit2.http.FormUrlEncoded;
-        import retrofit2.http.GET;
-        import retrofit2.http.Multipart;
-        import retrofit2.http.POST;
-        import retrofit2.http.PUT;
-        import retrofit2.http.Part;
-        import retrofit2.http.Path;
-        import retrofit2.http.Query;
+import okhttp3.RequestBody;
+import retrofit2.Call;
+import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
+import retrofit2.http.Multipart;
+import retrofit2.http.POST;
+import retrofit2.http.PUT;
+import retrofit2.http.Part;
+import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 /**
  * 功能描述：相关注解的使用及其相关说明
@@ -97,4 +98,12 @@ public interface AddressServes {
 
     @GET("brands")
     Call<IndexModel> getIndexList();
+
+    /**
+     * 版本更新
+     *
+     * @return
+     */
+    @GET("operation/apk/{platformId}")
+    Call<NewVersionInfoModel> getVersionUpdater(@Path("platformId") String addressId);
 }

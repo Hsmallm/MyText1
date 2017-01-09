@@ -18,6 +18,7 @@ import java.util.List;
 
 /**
  * Created by hzhm on 2016/12/16.
+ *
  * 功能描述：实现简单的文字循环滚动效果,即，弹幕滚动的动画效果...
  */
 

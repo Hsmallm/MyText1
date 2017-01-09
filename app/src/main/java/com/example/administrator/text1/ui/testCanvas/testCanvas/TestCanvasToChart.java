@@ -48,7 +48,9 @@ public class TestCanvasToChart extends View {
         super(context, attrs);
 
         bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.dot_light);
+        //Matrix：用于处理图像的矩阵类
         Matrix matrix = new Matrix();
+        //将图片进行缩放
         matrix.postScale(0.1f, 0.1f);
         bitmap = bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
 
@@ -61,7 +63,7 @@ public class TestCanvasToChart extends View {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         width = MeasureSpec.getSize(widthMeasureSpec);
         height = MeasureSpec.getSize(heightMeasureSpec);
-        r1 = (width - 100) / 2;
+        r1 = (width - 200) / 2;
 
         widthMeasureSpec = MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY);
         heightMeasureSpec = MeasureSpec.makeMeasureSpec(heightMeasureSpec, MeasureSpec.EXACTLY);
@@ -82,19 +84,19 @@ public class TestCanvasToChart extends View {
      */
     private void drawCanvasArc(Canvas canvas) {
         //实例化这个矩形类的参数分别是：左x轴、上y轴、右x轴、下y轴
-        RectF rectF = new RectF(50, 50, width - 50, width - 50);
+        RectF rectF = new RectF(100, 100, width - 100, width - 100);
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setStyle(Paint.Style.STROKE);
-        paint.setColor(Color.BLUE);
+        paint.setColor(Color.parseColor("#ffb9ab"));
         paint.setStrokeWidth(8);
         //设置未封闭式圆形最后的盖帽样式
         paint.setStrokeCap(Paint.Cap.ROUND);
 
-        RectF rectF2 = new RectF(80, 80, width - 80, width - 80);
+        RectF rectF2 = new RectF(130, 130, width - 130, width - 130);
         //------注：Paint.ANTI_ALIAS_FLAG：设置画笔为无锯齿状态...
         Paint paint2 = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint2.setStyle(Paint.Style.STROKE);
-        paint2.setColor(Color.BLUE);
+        paint2.setColor(Color.parseColor("#ffb9ab"));
         paint2.setStrokeWidth(20);
         paint2.setStrokeCap(Paint.Cap.ROUND);
 
@@ -109,12 +111,6 @@ public class TestCanvasToChart extends View {
      * @param canvas
      */
     private void drawOval(Canvas canvas) {
-//        RectF rectF = new RectF(45, height / 2, 55, height / 2 + 10);
-//        Paint paint = new Paint();
-//        paint.setStyle(Paint.Style.FILL);
-//        paint.setColor(Color.RED);
-//
-//        canvas.drawOval(rectF, paint);
         caculatePoint();
         canvas.drawBitmap(bitmap, x, y, null);
     }
@@ -130,11 +126,11 @@ public class TestCanvasToChart extends View {
         //x轴计算：屏幕宽度的一半 + 半径对象的cos值 - 光标的一半
         //y轴计算：半径对象的sos值 + 半径 + 距上间距 - 光标的一半
         x = width / 2 + b - bitmap.getHeight() / 2;
-        y = a + r1 + 50 - bitmap.getHeight() / 2;
+        y = a + r1 + 100 - bitmap.getHeight() / 2;
     }
 
     /**
-     * 设置动画的滚动进度
+     * 设置动画的滚动进度(注：lastProgress就是这个动态值，随着lastProgress的不断变化，圆点图片就会不断的重新计算...)
      *
      * @param progress
      */
