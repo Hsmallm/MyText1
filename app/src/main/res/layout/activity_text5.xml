@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/frame"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/title"
@@ -12,8 +12,8 @@
         android:background="@color/blue"
         android:gravity="center"
         android:text="Android系统信息获取"
-        android:textSize="20dp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 
     <TextView
         android:id="@+id/btn"
@@ -21,7 +21,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:text="点击获取系统信息"
-        />
-
+        android:text="点击获取系统信息" />
 </FrameLayout>

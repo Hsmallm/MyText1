@@ -9,7 +9,9 @@ import android.widget.TextView;
 import com.example.administrator.text1.R;
 
 /**
- * Created by Sanctus on 2016/11/16.
+ * Created by hzhm on 2016/11/16.
+ *
+ * 功能描述：版本更新dialog
  */
 public class DialogUpdate extends Dialog {
     private View imgClose;

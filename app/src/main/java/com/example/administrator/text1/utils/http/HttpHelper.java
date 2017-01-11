@@ -5,7 +5,7 @@ import android.util.Log;
 import com.sina.weibo.sdk.utils.LogUtil;
 
 /**
- * 功能描述：服务器响应后的异常处理try/catch
+ * 功能描述：服务器响应后相关结果的回掉处理...
  * Created by hzhm on 2016/8/19.
  */
 public class HttpHelper {
