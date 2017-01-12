@@ -87,4 +87,31 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">false</item>
     </style>
+
+    <style name="TrcBottomTabButton">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="TrcBottomTabIcon">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">26dp</item>
+    </style>
+
+    <style name="TrcBottomTabTitle">
+        <item name="android:textColor">@drawable/trc_main_text_color</item>
+        <item name="android:gravity">top|center_horizontal</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:textSize">@dimen/main_bottom_txt</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 </resources>

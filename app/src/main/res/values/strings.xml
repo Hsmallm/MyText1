@@ -29,4 +29,11 @@
     <item type="id" name="tag_width"></item>
     <item type="id" name="tag_height"></item>
     <item type="id" name="tag_select"></item>
+
+    <!-- main -->
+    <string name="trc_home">首页</string>
+    <string name="trc_category">分类</string>
+    <string name="trc_shopping_tag">购物袋</string>
+    <string name="trc_find">发现</string>
+    <string name="trc_my_page">我的</string>
 </resources>

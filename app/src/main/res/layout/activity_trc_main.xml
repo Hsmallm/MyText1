@@ -1,0 +1,107 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="55dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:background="#fff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="55dp"
+        android:background="#c9c9c9" />
+
+    <LinearLayout
+        android:id="@+id/tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tab1"
+            style="@style/TrcBottomTabButton"
+            android:contentDescription="trcHome">
+
+            <ImageView
+                style="@style/TrcBottomTabIcon"
+                android:src="@drawable/trc_home" />
+
+            <TextView
+                style="@style/TrcBottomTabTitle"
+                android:text="@string/trc_home" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab2"
+            style="@style/TrcBottomTabButton"
+            android:contentDescription="trccCategory">
+
+            <ImageView
+                style="@style/TrcBottomTabIcon"
+                android:src="@drawable/trc_category" />
+
+            <TextView
+                style="@style/TrcBottomTabTitle"
+                android:text="@string/trc_category" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab3"
+            style="@style/TrcBottomTabButton"
+            android:contentDescription="trcFind">
+
+            <ImageView
+                style="@style/TrcBottomTabIcon"
+                android:src="@drawable/trc_find" />
+
+            <TextView
+                style="@style/TrcBottomTabTitle"
+                android:text="@string/trc_find" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab4"
+            style="@style/TrcBottomTabButton"
+            android:contentDescription="trcShoppingTag">
+
+            <ImageView
+                style="@style/TrcBottomTabIcon"
+                android:src="@drawable/trc_shopping_bag" />
+
+            <TextView
+                style="@style/TrcBottomTabTitle"
+                android:text="@string/trc_shopping_tag" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab5"
+            style="@style/TrcBottomTabButton"
+            android:contentDescription="trcMyPage">
+
+            <ImageView
+                style="@style/TrcBottomTabIcon"
+                android:src="@drawable/trc_mine" />
+
+            <TextView
+                style="@style/TrcBottomTabTitle"
+                android:text="@string/trc_my_page" />
+        </LinearLayout>
+    </LinearLayout>
+
+</merge>

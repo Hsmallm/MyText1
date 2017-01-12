@@ -3,4 +3,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="test_gridlayoutmanager">16dp</dimen>
+    <!-- main -->
+    <dimen name="main_bottom_txt">11dp</dimen>
 </resources>

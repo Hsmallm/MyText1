@@ -7,6 +7,9 @@
     <!-- title文字 -->
     <color name="titleTxtColor">#525252</color>
 
+    <!-- 标题/正文 -->
+    <color name="trc_font">#353535</color>
+
     <!-- frg背景 -->
     <color name="frgBgColor">#f8f8f8</color>
 
