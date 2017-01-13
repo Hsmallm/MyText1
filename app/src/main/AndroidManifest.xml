@@ -29,7 +29,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.testTab.testNewMainActivity.TestNewMainActivity"
+            android:name=".ui.testTab.testTabLayout.TestTabLayout"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
