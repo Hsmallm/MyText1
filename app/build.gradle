@@ -35,7 +35,7 @@ dependencies {
     compile project(':umengshare2')
     compile files('libs/picasso-2.5.2.jar')
     compile files('libs/nineoldandroids-2.4.0.jar')
-    compile project(':libzxing')
+    compile files('libs/zxing.jar')
     compile files('libs/BaiduLBS_Android.jar')
     compile project(':library')
     compile project(':fancyCoverFlow_library')
@@ -48,6 +48,7 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'
     compile files('libs/sun.misc.BASE64Decoder.jar')
     compile project(':PushSDK')
+    compile files('libs/zxing.jar')
 }
 
 //androidannotations(开发框架的配置)

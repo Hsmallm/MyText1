@@ -102,4 +102,9 @@
     <color name="font_blue_dark">#0086d1</color><!--蓝色主题色-->
     <color name="font_blue_light">#27a1e5</color><!--蓝色主题色-->
     <color name="font_white_transparent">#80FFFFFF</color><!--白色半透明-->
+
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
 </resources>
