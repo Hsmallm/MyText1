@@ -19,6 +19,8 @@ package com.example.administrator.text1.ui.testScanCode.ScanCodeSup.decoding;
 /**
  * This class provides the constants to use when sending an Intent to Barcode Scanner.
  * These strings are effectively API and cannot be changed.
+ *
+ * 功能描述：这个类提供了使用的常量在发送条形码扫描器的意图。
  */
 public final class Intents {
   private Intents() {

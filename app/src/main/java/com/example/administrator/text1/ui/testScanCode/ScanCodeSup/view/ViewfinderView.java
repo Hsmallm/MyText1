@@ -101,13 +101,14 @@ public final class ViewfinderView extends View {
      */
     private int slideBottom;
 
+    private Rect frame;
     private Bitmap resultBitmap;
     private final int maskColor;
     private final int resultColor;
 
     private final int resultPointColor;
-    private Collection<ResultPoint> possibleResultPoints;
-    private Collection<ResultPoint> lastPossibleResultPoints;
+    private Collection<ResultPoint> possibleResultPoints;//可能的结果点
+    private Collection<ResultPoint> lastPossibleResultPoints;//最终的结果点
 
     boolean isFirst;
 
@@ -123,14 +124,14 @@ public final class ViewfinderView extends View {
         maskColor = resources.getColor(R.color.viewfinder_mask);
         resultColor = resources.getColor(R.color.result_view);
 
-        resultPointColor = resources.getColor(R.color.possible_result_points);
+        resultPointColor = resources.getColor(R.color.red);
         possibleResultPoints = new HashSet<ResultPoint>(5);
     }
 
     @Override
     public void onDraw(Canvas canvas) {
         //中间的扫描框，你要修改扫描框的大小，去CameraManager里面修改
-        Rect frame = CameraManager.get().getFramingRect();
+        frame = CameraManager.get().getFramingRect();
         if (frame == null) {
             return;
         }
@@ -142,7 +143,7 @@ public final class ViewfinderView extends View {
             slideBottom = frame.bottom;
         }
 
-        //获取屏幕的宽和高
+        //获取屏幕的宽和高(当前画布即等于当前屏幕...)
         int width = canvas.getWidth();
         int height = canvas.getHeight();
 
@@ -197,39 +198,47 @@ public final class ViewfinderView extends View {
             paint.setAlpha(0x40);
             paint.setTypeface(Typeface.create("System", Typeface.BOLD));
             canvas.drawText(getResources().getString(R.string.scan_text), frame.left, (float) (frame.bottom + (float) TEXT_PADDING_TOP * density), paint);
-
-
-            Collection<ResultPoint> currentPossible = possibleResultPoints;
-            Collection<ResultPoint> currentLast = lastPossibleResultPoints;
-            if (currentPossible.isEmpty()) {
-                lastPossibleResultPoints = null;
-            } else {
-                possibleResultPoints = new HashSet<ResultPoint>(5);
-                lastPossibleResultPoints = currentPossible;
-                paint.setAlpha(OPAQUE);
-                paint.setColor(resultPointColor);
-                for (ResultPoint point : currentPossible) {
-                    canvas.drawCircle(frame.left + point.getX(), frame.top
-                            + point.getY(), 6.0f, paint);
-                }
-            }
-            if (currentLast != null) {
-                paint.setAlpha(OPAQUE / 2);
-                paint.setColor(resultPointColor);
-                for (ResultPoint point : currentLast) {
-                    canvas.drawCircle(frame.left + point.getX(), frame.top
-                            + point.getY(), 3.0f, paint);
-                }
-            }
-
+            //绘制相应的扫描点坐标
+            drawResultPoints(canvas,paint);
 
             //只刷新扫描框的内容，其他地方不刷新
             postInvalidateDelayed(ANIMATION_DELAY, frame.left, frame.top,
                     frame.right, frame.bottom);
-
         }
     }
 
+    /**
+     * 绘制相应的扫描点坐标
+     */
+    private void drawResultPoints(Canvas canvas,Paint paint){
+        Collection<ResultPoint> currentPossible = possibleResultPoints;
+        Collection<ResultPoint> currentLast = lastPossibleResultPoints;
+        if (currentPossible.isEmpty()) {
+            lastPossibleResultPoints = null;
+        } else {
+            //实例化一个HashSet集合对象（注：HashSet只能存储不重复的对象）
+            possibleResultPoints = new HashSet<ResultPoint>(5);
+            lastPossibleResultPoints = currentPossible;
+            paint.setAlpha(OPAQUE);
+            paint.setColor(resultPointColor);
+            for (ResultPoint point : currentPossible) {
+                canvas.drawCircle(frame.left + point.getX(), frame.top
+                        + point.getY(), 6.0f, paint);
+            }
+        }
+        if (currentLast != null) {
+            paint.setAlpha(OPAQUE / 2);
+            paint.setColor(resultPointColor);
+            for (ResultPoint point : currentLast) {
+                canvas.drawCircle(frame.left + point.getX(), frame.top
+                        + point.getY(), 3.0f, paint);
+            }
+        }
+    }
+
+    /**
+     * 重新绘制扫码界面...
+     */
     public void drawViewfinder() {
         resultBitmap = null;
         invalidate();

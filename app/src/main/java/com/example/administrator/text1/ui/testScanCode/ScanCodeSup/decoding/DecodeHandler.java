@@ -35,6 +35,9 @@ import com.google.zxing.common.HybridBinarizer;
 
 import java.util.Hashtable;
 
+/**
+ * 解码消息处理类(并且还可以发送消息给主线程)...
+ */
 final class DecodeHandler extends Handler {
 
   private static final String TAG = DecodeHandler.class.getSimpleName();
@@ -52,11 +55,12 @@ final class DecodeHandler extends Handler {
   public void handleMessage(Message message) {
     switch (message.what) {
       case R.id.decode:
-        //Log.d(TAG, "Got decode message");
+        //解码...
         decode((byte[]) message.obj, message.arg1, message.arg2);
         break;
       case R.id.quit:
-        Looper.myLooper().quit();
+        //
+        Looper.myLooper().quit();//这个loop()循环不会立马返回，需要自己主动调用Looper.myLooper().quit()才会返回
         break;
     }
   }
@@ -96,6 +100,7 @@ final class DecodeHandler extends Handler {
     if (rawResult != null) {
       long end = System.currentTimeMillis();
       Log.d(TAG, "Found barcode (" + (end - start) + " ms):\n" + rawResult.toString());
+      //发送消息给主线程的CaptureActivityHandler进行处理
       Message message = Message.obtain(activity.getHandler(), R.id.decode_succeeded, rawResult);
       Bundle bundle = new Bundle();
       bundle.putParcelable(DecodeThread.BARCODE_BITMAP, source.renderCroppedGreyscaleBitmap());
@@ -103,6 +108,7 @@ final class DecodeHandler extends Handler {
       //Log.d(TAG, "Sending decode succeeded message...");
       message.sendToTarget();
     } else {
+      //发送消息给主线程的CaptureActivityHandler进行处理
       Message message = Message.obtain(activity.getHandler(), R.id.decode_failed);
       message.sendToTarget();
     }

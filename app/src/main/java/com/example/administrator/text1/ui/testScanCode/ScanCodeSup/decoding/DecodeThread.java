@@ -30,7 +30,7 @@ import java.util.concurrent.CountDownLatch;
 
 /**
  * This thread does all the heavy lifting of decoding the images.
- * �����߳�
+ * 功能描述：这个线程解码图像
  */
 final class DecodeThread extends Thread {
 
@@ -38,7 +38,12 @@ final class DecodeThread extends Thread {
   private final MipcaActivityCapture activity;
   private final Hashtable<DecodeHintType, Object> hints;
   private Handler handler;
-  private final CountDownLatch handlerInitLatch;
+  /**
+   * 前面定义了一个CountDownLatch类型变量，该变量为一个倒计数用的锁。用法挺简单，如代码中，先new CountDownLatch（1），计数值为1，
+   * handlerInitLatch.countDown(), 开始倒数。handlerInitLatch.await() 若计数值没有变为0，则一直阻塞。直到计数值为0后，
+   * 才return handler，因此在调用getHandler时不会返回null的handler。
+   */
+  private final CountDownLatch handlerInitLatch;//到计数的锁
 
   DecodeThread(MipcaActivityCapture activity,
                Vector<BarcodeFormat> decodeFormats,
@@ -46,7 +51,7 @@ final class DecodeThread extends Thread {
                ResultPointCallback resultPointCallback) {
 
     this.activity = activity;
-    handlerInitLatch = new CountDownLatch(1);
+    handlerInitLatch = new CountDownLatch(1);//到计数的锁
 
     hints = new Hashtable<DecodeHintType, Object>(3);
 
@@ -68,19 +73,22 @@ final class DecodeThread extends Thread {
 
   Handler getHandler() {
     try {
-      handlerInitLatch.await();
+      handlerInitLatch.await();//阻塞先等handler被初始化了才能返回结果。改计数锁即等countdown--
     } catch (InterruptedException ie) {
       // continue?
     }
     return handler;
   }
 
+  /**
+   * 这就是自己创建一个工作线程，为其分配一个消息队列，消息循环的简单迅速办法。
+   */
   @Override
   public void run() {
-    Looper.prepare();
-    handler = new DecodeHandler(activity, hints);
-    handlerInitLatch.countDown();
-    Looper.loop();
+    Looper.prepare();//来创建消息队列
+    handler = new DecodeHandler(activity, hints);//附于该线程的handler对象
+    handlerInitLatch.countDown();//启动到计数，countdown-1 变成0；
+    Looper.loop();//进入消息循环（注：这个loop()循环不会立马返回，需要自己主动调用Looper.myLooper().quit()才会返回）
   }
 
 }

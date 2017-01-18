@@ -26,6 +26,12 @@ import java.util.List;
 import java.util.Vector;
 import java.util.regex.Pattern;
 
+/**
+ * 功能描述：解码格式管理类...
+ * Vector：向量类，可实现自动增长的对象数组
+ * （可以往其中随意插入不同类的对象，即不需顾及类型也不需预先选定向量的容量，并可以方便地进行查找。
+ * 对于预先不知或者不愿预先定义数组大小，并且需要频繁地进行查找，插入，删除工作的情况。可以考虑使用向量类。 ）
+ */
 final class DecodeFormatManager {
 
   private static final Pattern COMMA_PATTERN = Pattern.compile(",");
@@ -41,14 +47,17 @@ final class DecodeFormatManager {
     PRODUCT_FORMATS.add(BarcodeFormat.EAN_13);
     PRODUCT_FORMATS.add(BarcodeFormat.EAN_8);
     PRODUCT_FORMATS.add(BarcodeFormat.RSS14);
+
     ONE_D_FORMATS = new Vector<BarcodeFormat>(PRODUCT_FORMATS.size() + 4);
     ONE_D_FORMATS.addAll(PRODUCT_FORMATS);
     ONE_D_FORMATS.add(BarcodeFormat.CODE_39);
     ONE_D_FORMATS.add(BarcodeFormat.CODE_93);
     ONE_D_FORMATS.add(BarcodeFormat.CODE_128);
     ONE_D_FORMATS.add(BarcodeFormat.ITF);
+
     QR_CODE_FORMATS = new Vector<BarcodeFormat>(1);
     QR_CODE_FORMATS.add(BarcodeFormat.QR_CODE);
+
     DATA_MATRIX_FORMATS = new Vector<BarcodeFormat>(1);
     DATA_MATRIX_FORMATS.add(BarcodeFormat.DATA_MATRIX);
   }
@@ -72,8 +81,15 @@ final class DecodeFormatManager {
     return parseDecodeFormats(formats, inputUri.getQueryParameter(Intents.Scan.MODE));
   }
 
+  /**
+   * 解码格式的转换...
+   * @param scanFormats
+   * @param decodeMode
+   * @return
+     */
   private static Vector<BarcodeFormat> parseDecodeFormats(Iterable<String> scanFormats,
                                                           String decodeMode) {
+    //
     if (scanFormats != null) {
       Vector<BarcodeFormat> formats = new Vector<BarcodeFormat>();
       try {
@@ -85,6 +101,7 @@ final class DecodeFormatManager {
         // ignore it then
       }
     }
+    //解码格式的转化并返回当前的解码格式...
     if (decodeMode != null) {
       if (Intents.Scan.PRODUCT_MODE.equals(decodeMode)) {
         return PRODUCT_FORMATS;
