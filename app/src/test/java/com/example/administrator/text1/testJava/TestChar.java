@@ -2,23 +2,58 @@ package com.example.administrator.text1.testJava;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by hzhm on 2016/11/30.
  * 功能描述：测试字符char的相关属性及其使用...
  * 1、java中的char字符型数据类型的相关简介？？？
-      char是Java中的保留字，与别的语言不同的是，char在Java中是16位的，因为Java用的是Unicode。不过8位的ASCII码包含在Unicode中，是从0~127的
-      Java中使用Unicode的原因是，Java的Applet允许全世界范围内运行，那它就需要一种可以表述人类所有语言的字符编码。Unicode。
-      但是English，Spanish，German, French根本不需要这么表示，所以它们其实采用ASCII码会更高效。
+ * char是Java中的保留字，与别的语言不同的是，char在Java中是16位的，因为Java用的是Unicode。不过8位的ASCII码包含在Unicode中，是从0~127的
+ * Java中使用Unicode的原因是，Java的Applet允许全世界范围内运行，那它就需要一种可以表述人类所有语言的字符编码。Unicode。
+ * 但是English，Spanish，German, French根本不需要这么表示，所以它们其实采用ASCII码会更高效。
  * 2、字节型byte数据类型和字符型数据类型char的比较？？？
-      byte 是字节数据类型 ，是有符号型的，占1 个字节(即8位)；大小范围为-128—127 。
-      char 是字符数据类型 ，是无符号型的，占2字节(即16位,Unicode码 ）；大小范围 是0—65535 ；char是一个16位二进制的Unicode字符，JAVA用char来表示一个字符
+ * byte 是字节数据类型 ，是有符号型的，占1 个字节(即8位)；大小范围为-128—127 。
+ * char 是字符数据类型 ，是无符号型的，占2字节(即16位,Unicode码 ）；大小范围 是0—65535 ；char是一个16位二进制的Unicode字符，JAVA用char来表示一个字符
  */
 
 public class TestChar {
 
+    private List<String> list3 = new ArrayList<>();
+
     @Test
     public void hello() {
-        testEnglish();
+        filterLists();
+    }
+
+    private void filterLists() {
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        list1.add("额额额");
+
+        list1.add("啊啊啊");
+        list1.add("不不不");
+        list1.add("烦烦烦");
+
+        list1.add("踩踩踩");
+        list1.add("顶顶顶");
+        list1.add("嘎嘎嘎");
+
+
+        list2.add("啊啊啊");
+        list2.add("不不不");
+        list2.add("踩踩踩");
+        list2.add("顶顶顶");
+        list3.add("嘎嘎嘎");
+        for (int i = 0; i < list1.size(); i++) {
+            for (int j = 0; j < list2.size(); j++) {
+                if (list1.get(i).equals(list2.get(j))) {
+                    list1.remove(i);
+                }
+            }
+        }
+        list3 = list1;
+        System.out.println(list3.size());
     }
 
     /**
@@ -52,8 +87,8 @@ public class TestChar {
     /**
      * char、byte、int对于英文字符，可以相互转化
      * 注：1、char i = 86：当给char字符类型赋值一个数字时，实质输出赋值的为对应的字符
-     *     2、char i = 'X'：当给char字符类型赋值一个字符时，实质输出的为对应的字符
-     *        (注：字符的赋值只能用''表示，且里面有且只能赋予一个字符)
+     * 2、char i = 'X'：当给char字符类型赋值一个字符时，实质输出的为对应的字符
+     * (注：字符的赋值只能用''表示，且里面有且只能赋予一个字符)
      */
     private void testEnglish() {
         byte g = 98;   //b对应ASCII是98

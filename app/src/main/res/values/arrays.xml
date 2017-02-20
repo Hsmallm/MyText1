@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_colors">
+        <item>@color/black</item>
+        <item>@color/red</item>
+        <item>@color/blue</item>
+        <item>@color/yellow</item>
+        <item>@color/grey</item>
+        <item>@color/green</item>
+    </array>
+    
+    <string-array name="array_string">
+        <item>华为</item>
+        <item>苹果</item>
+        <item>三星</item>
+        <item>小米</item>
+        <item>魅族</item>
+        <item>ViVo</item>
+    </string-array>
+
+    <integer-array name="array_int">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </integer-array>
+</resources>

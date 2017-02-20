@@ -27,12 +27,13 @@ import java.util.concurrent.TimeUnit;
 /**
  * Finishes an activity after a period of inactivity.
  *
- * 功能描述：
+ * 功能描述：定时执行周期性任务...
  */
 public final class InactivityTimer {
 
   private static final int INACTIVITY_DELAY_SECONDS = 5 * 60;
 
+  //实例化线程池对象...
   private final ScheduledExecutorService inactivityTimer =
       Executors.newSingleThreadScheduledExecutor(new DaemonThreadFactory());
   private final Activity activity;
@@ -78,5 +79,4 @@ public final class InactivityTimer {
       return thread;
     }
   }
-
 }

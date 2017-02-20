@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="测试Android---Toast"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_toast1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="默认"/>
+
+    <Button
+        android:id="@+id/btn_toast2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义显示位置"/>
+
+    <Button
+        android:id="@+id/btn_toast3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="带图片"/>
+
+    <Button
+        android:id="@+id/btn_toast4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="完全自定义"/>
+
+    <Button
+        android:id="@+id/btn_toast5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="其他线程"/>
+</LinearLayout>

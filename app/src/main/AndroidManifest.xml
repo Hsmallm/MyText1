@@ -5,8 +5,6 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -19,12 +17,13 @@
     <uses-permission android:name="com.google.android.launcher.permission.WRITE_SETTINGS" />
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
     <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
-
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
-
+    <!--<permission android:protectionLevel="normal" android:name="scott.permission.MY_BROADCAST_PERMISSION" />-->
+    <!--<uses-permission android:name="scott.permission.MY_BROADCAST_PERMISSION" />-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:name=".utils.ThApplication"
@@ -34,9 +33,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.testScanCode.test.TestCameraActivity"
+            android:name=".ui.testAndroid.testOther.TestRes"
             android:windowSoftInputMode="adjustPan"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:allowTaskReparenting="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -48,8 +48,14 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".ui.testPageAnimation.TestPageAnimation2" />
-        <activity android:name=".ui.testActivity.SecondActivity" />
+        <activity android:name=".ui.testPageAnimation.TestPageAnimation2">
+            <intent-filter>
+                <action android:name="com.scott.intent.action.TARGET"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <!--<data android:scheme="scott" android:host="com.scott.intent.data" android:port="7788" android:path="/target"/>-->
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.testAndroid.testActivity.SecondActivity" />
         <activity android:name=".ui.testWebView.TextWebViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
@@ -60,16 +66,40 @@
         <activity
             android:name=".ui.testAndroidAttribute.TestWindowSoftInputMode2"
             android:windowSoftInputMode="stateUnchanged" />
-        <activity android:name=".ui.testActivity.testIntentFlagsAndLaunchMode.TestActivity2" />
-        <activity android:name=".ui.testActivity.testIntentFlagsAndLaunchMode.TestActivity3" />
-        <activity android:name=".ui.testActivity.testIntentFlagsAndLaunchMode.TestActivity4" />
-        <activity android:name=".ui.testActivity.testIntentFlagsAndLaunchMode.TestFinishActivity" />
+        <!--<activity android:name=".ui.testActivity.testIntentFlagsAndLaunchMode.TestActivity2" />-->
+        <activity android:name=".ui.testAndroid.testActivity.testIntentFlagsAndLaunchMode.TestActivity3" />
+        <activity android:name=".ui.testAndroid.testActivity.testIntentFlagsAndLaunchMode.TestActivity4" />
+        <activity android:name=".ui.testAndroid.testActivity.testIntentFlagsAndLaunchMode.TestFinishActivity" />
         <activity android:name=".ui.testScanCode.MipcaActivityCapture"/>
         <service android:name=".download.service.DownloadService" />
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
             android:process=":remote"></service>
+        <service android:name=".ui.testAndroid.testService.MyService"/>
+        <receiver android:name=".ui.testAndroid.testBroadcastReceiver.TestCommonReceiver.FirstReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MY_BROADCAST"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ui.testAndroid.testBroadcastReceiver.TestCommonReceiver.SecondReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.MY_BROADCAST"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".ui.testAndroid.testBroadcastReceiver.TestCommonReceiver.ThirdReceiver">
+            <intent-filter android:priority="998">
+                <action android:name="android.intent.action.MY_BROADCAST"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ui.testAndroid.testBroadcastReceiver.TestNetworkBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name=".ui.testAndroid.testIntent.TestIntent">
+        </activity>
 
 
         <!-- UMeng -->
