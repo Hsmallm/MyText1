@@ -33,7 +33,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.testAndroid.testOther.TestRes"
+            android:name=".ui.testAndroid.testOther.TestConstraintLayout"
             android:windowSoftInputMode="adjustPan"
             android:screenOrientation="portrait"
             android:allowTaskReparenting="true">
