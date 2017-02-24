@@ -33,7 +33,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.testAndroid.testOther.TestConstraintLayout"
+            android:name=".ui.testAnimator.testNewAnima.TestNewAnima"
             android:windowSoftInputMode="adjustPan"
             android:screenOrientation="portrait"
             android:allowTaskReparenting="true">
@@ -71,6 +71,8 @@
         <activity android:name=".ui.testAndroid.testActivity.testIntentFlagsAndLaunchMode.TestActivity4" />
         <activity android:name=".ui.testAndroid.testActivity.testIntentFlagsAndLaunchMode.TestFinishActivity" />
         <activity android:name=".ui.testScanCode.MipcaActivityCapture"/>
+        <activity android:name=".ui.testAnimator.testNewAnima.TestNewAnima2"/>
+        <activity android:name=".ui.testAnimator.testNewAnima.TestNewAnima3"/>
         <service android:name=".download.service.DownloadService" />
         <service
             android:name="com.baidu.location.f"

@@ -6,10 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--简介：ConstraintLayout,在Google IO大会中不仅仅带来了Android Studio 2.2预览版，同时带给我们一个依赖约束的库。
-         简单来说，她是相对布局的升级版本，但是区别与相对布局更加强调约束。何为约束，即控件之间的关系。
-         她能让你的布局更加扁平化，一般来说一个界面一层就够了；同时借助于AS我们能极其简单的完成界面布局。-->
-
     <!--1、相对位置属性：layout_constraintLeft_toRightOf这个属性的意思是，buttonB的左边缘，贴着buttonA的右边缘。
            注意这个toRightOf这个和以往的不一样哦！所以刚刚说了RelativeLayout的toRightOf和ConstraintLayout的Left_toRightOf是不一样的。
            RelativeLayout中是将控件作为一个整体，而ConstraintLayout是对齐控件四周的边缘。-->
