@@ -33,7 +33,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.testAnimator.testNewAnima.TestNewAnima"
+            android:name=".ui.testRxJava.TestRxJava2"
             android:windowSoftInputMode="adjustPan"
             android:screenOrientation="portrait"
             android:allowTaskReparenting="true">

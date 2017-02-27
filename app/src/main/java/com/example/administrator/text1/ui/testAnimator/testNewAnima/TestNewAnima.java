@@ -2,9 +2,12 @@ package com.example.administrator.text1.ui.testAnimator.testNewAnima;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Pair;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -56,13 +59,13 @@ public class TestNewAnima extends Activity {
 //                overridePendingTransition(R.animator.anim_in_from_top,R.animator.anim_out_from_bottom);
 
                 //------B、共享元素型：4.1、共享元素动画（的单个共享元素）
-//                startActivity(new Intent(TestNewAnima.this, TestNewAnima3.class),
-//                        ActivityOptions.makeSceneTransitionAnimation(TestNewAnima.this, btn, "myBtn").toBundle());
+                startActivity(new Intent(TestNewAnima.this, TestNewAnima3.class),
+                        ActivityOptions.makeSceneTransitionAnimation(TestNewAnima.this, btn, "myBtn").toBundle());
                 //------4.2 如果两个页面中有多个共享元素该怎么办呢？简单，android:transitionName属性还像上面一样设置，
                 // 然后在启动Activity时我们可以通过Pair.create方法来设置多个共享元素
-//                ActivityOptions options =
-//                        ActivityOptions.makeSceneTransitionAnimation(TestNewAnima.this, Pair.create((View) txt, "myTxt"), Pair.create((View) btn, "myBtn"));
-//                startActivity(new Intent(TestNewAnima.this, TestNewAnima3.class), options.toBundle());
+                ActivityOptions options =
+                        ActivityOptions.makeSceneTransitionAnimation(TestNewAnima.this, Pair.create((View) txt, "myTxt"), Pair.create((View) btn, "myBtn"));
+                startActivity(new Intent(TestNewAnima.this, TestNewAnima3.class), options.toBundle());
                 addFragmentOfApp();
             }
         });

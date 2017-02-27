@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
 import android.transition.Fade;
+import android.transition.Slide;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -28,8 +29,8 @@ public class TestNewAnima2 extends Activity {
 //        getWindow().setEnterTransition(new Explode().setDuration(2000));
 //        getWindow().setExitTransition(new Explode().setDuration(2000));
         //2、滑动进入
-//        getWindow().setEnterTransition(new Slide().setDuration(2000));
-//        getWindow().setExitTransition(new Slide().setDuration(2000));
+        getWindow().setEnterTransition(new Slide().setDuration(2000));
+        getWindow().setExitTransition(new Slide().setDuration(2000));
         //3、淡入淡出
         getWindow().setEnterTransition(new Fade().setDuration(2000));
         getWindow().setExitTransition(new Fade().setDuration(2000));
