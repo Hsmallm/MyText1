@@ -243,4 +243,94 @@ public class TestRxJava2 extends Activity {
                 })
                 .subscribe(subscriber);
     }
+
+    /**
+     * 5.3、lift()相关实现原理：
+     * 1.lift() 创建了一个 Observable 后，加上之前的原始 Observable，已经有两个 Observable 了；
+     * 2.而同样地，新 Observable 里的新 OnSubscribe 加上之前的原始 Observable 中的原始 OnSubscribe，也就有了两个 OnSubscribe；
+     * 3.当用户调用经过 lift() 后的 Observable 的 subscribe() 的时候，使用的是 lift() 所返回的新的 Observable ，于是它所触发的 onSubscribe.call(subscriber)，
+     *   也是用的新 Observable 中的新 OnSubscribe，即在 lift() 中生成的那个 OnSubscribe；
+     * 4.而这个新 OnSubscribe 的 call() 方法中的 onSubscribe ，就是指的原始 Observable 中的原始 OnSubscribe ，
+     *   在这个 call() 方法里，新 OnSubscribe 利用 operator.call(subscriber) 生成了一个新的 Subscriber（Operator 就是在这里，
+     *   通过自己的 call() 方法将新 Subscriber 和原始 Subscriber 进行关联，并插入自己的『变换』代码以实现变换），
+     *   然后利用这个新 Subscriber 向原始 Observable 进行订阅。
+     * 简而言之：在 Observable 执行了 lift(Operator) 方法之后，会返回一个新的 Observable，这个新的 Observable 会像一个代理一样，
+     * 负责接收原始的 Observable 发出的事件，并在处理后发送给 Subscriber。
+     */
+    //---- 注意：这不是 lift() 的源码，而是将源码中与性能、兼容性、扩展性有关的代码剔除后的核心代码。
+//    public <R> Observable<R> lift(Operator<? extends R, ? super T> operator) {
+//        return Observable.create(new OnSubscribe<R>() {
+//            @Override
+//            public void call(Subscriber subscriber) {
+//                Subscriber newSubscriber = operator.call(subscriber);
+//                newSubscriber.onStart();
+//                onSubscribe.call(newSubscriber);
+//            }
+//        });
+//    }
+
+    /**
+     * 5.4、compose：compose() 是针对 Observable 自身进行变换。例如：设在程序中有多个 Observable ，并且他们都需要应用一组相同的 lift() 变换。你可以这么写：
+     */
+    private void testTransformation5(){
+        Observable.Transformer liftAll = new LiftAllTransformer();
+        Observable observable1 = Observable.just("1");
+        Observable observable2 = Observable.just("2");
+        Observable observable3 = Observable.just("3");
+        Observable observable4 = Observable.just("4");
+
+        observable1.compose(liftAll).subscribe(new Action1() {
+            @Override
+            public void call(Object o) {
+
+            }
+        });
+        observable2.compose(liftAll).subscribe(new Action1() {
+            @Override
+            public void call(Object o) {
+
+            }
+        });
+        observable3.compose(liftAll).subscribe(new Action1() {
+            @Override
+            public void call(Object o) {
+
+            }
+        });
+        observable4.compose(liftAll).subscribe(new Action1() {
+            @Override
+            public void call(Object o) {
+
+            }
+        });
+    }
+
+    //创建一个Transformer内部类
+    class LiftAllTransformer implements Observable.Transformer<Integer,String>{
+
+        @Override
+        public Observable<String> call(Observable<Integer> integerObservable) {
+            return integerObservable.lift(new Observable.Operator<String, Integer>() {//lift方法...
+                @Override
+                public Subscriber<? super Integer> call(Subscriber<? super String> subscriber) {
+                    return new Subscriber<Integer>() {
+                        @Override
+                        public void onCompleted() {
+
+                        }
+
+                        @Override
+                        public void onError(Throwable e) {
+
+                        }
+
+                        @Override
+                        public void onNext(Integer integer) {
+
+                        }
+                    };
+                }
+            });
+        }
+    }
 }
