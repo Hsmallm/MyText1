@@ -24,6 +24,8 @@
     <!--<permission android:protectionLevel="normal" android:name="scott.permission.MY_BROADCAST_PERMISSION" />-->
     <!--<uses-permission android:name="scott.permission.MY_BROADCAST_PERMISSION" />-->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
 
     <application
         android:name=".utils.ThApplication"
@@ -33,7 +35,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.testRxJava.TestRxJava2"
+            android:name=".ui.TestTrc.TestTrc"
             android:windowSoftInputMode="adjustPan"
             android:screenOrientation="portrait"
             android:allowTaskReparenting="true">

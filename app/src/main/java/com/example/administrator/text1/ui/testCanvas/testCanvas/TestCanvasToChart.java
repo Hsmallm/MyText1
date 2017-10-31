@@ -116,7 +116,7 @@ public class TestCanvasToChart extends View {
     }
 
     /**
-     * 计算滚动到对应角度，亮点对应坐标(注：这是一套统一的计算坐标点公式，尽管sin、cos肯能为负值...)
+     * 计算滚动到对应角度，亮点对应坐标(注：这是一套统一的计算坐标点公式，尽管sin、cos可能为负值...)
      */
     private void caculatePoint() {
         sin = Math.sin(Math.toRadians(lastProgress));

@@ -23,8 +23,6 @@ import rx.functions.Action1;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
-import static com.example.administrator.text1.R.id.img;
-
 /**
  * Created by hzhm on 2017/2/27.
  */
@@ -36,8 +34,8 @@ public class TestRxJava2 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test_rxjava);
-        imagView = (ImageView) findViewById(img);
+        setContentView(R.layout.frg_main_account);
+//        imagView = (ImageView) findViewById(img);
         testTransformation4();
     }
 
@@ -87,7 +85,7 @@ public class TestRxJava2 extends Activity {
 
                     @Override
                     public void onNext(Drawable drawable) {
-                        imagView.setImageDrawable(drawable);
+//                        imagView.setImageDrawable(drawable);
                     }
 
                     @Override
@@ -121,7 +119,7 @@ public class TestRxJava2 extends Activity {
                 .subscribe(new Action1<Bitmap>() {
                     @Override
                     public void call(Bitmap bitmap) {
-                        imagView.setImageBitmap(bitmap);
+//                        imagView.setImageBitmap(bitmap);
                     }
                 });
     }
@@ -332,5 +330,9 @@ public class TestRxJava2 extends Activity {
                 }
             });
         }
+    }
+
+    private void testTransformation6(){
+
     }
 }

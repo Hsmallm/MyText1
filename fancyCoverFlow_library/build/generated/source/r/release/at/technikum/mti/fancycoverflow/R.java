@@ -67,10 +67,10 @@ containing a value of this type.
         public static int unselectedScale=0x7f010002;
     }
     public static final class id {
-        public static int auto=0x7f020000;
+        public static int auto=0x7f030000;
     }
     public static final class string {
-        public static int app_name=0x7f030000;
+        public static int app_name=0x7f020000;
     }
     public static final class styleable {
         /** Attributes that can be used with a FancyCoverFlow.
@@ -118,7 +118,7 @@ containing a value of this type.
 </table>
           @attr name at.technikum.mti.fancycoverflow:actionDistance
         */
-        public static final int FancyCoverFlow_actionDistance = 5;
+        public static int FancyCoverFlow_actionDistance = 5;
         /**
           <p>This symbol is the offset where the {@link at.technikum.mti.fancycoverflow.R.attr#maxRotation}
           attribute's value can be found in the {@link #FancyCoverFlow} array.
@@ -132,7 +132,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name at.technikum.mti.fancycoverflow:maxRotation
         */
-        public static final int FancyCoverFlow_maxRotation = 3;
+        public static int FancyCoverFlow_maxRotation = 3;
         /**
           <p>This symbol is the offset where the {@link at.technikum.mti.fancycoverflow.R.attr#scaleDownGravity}
           attribute's value can be found in the {@link #FancyCoverFlow} array.
@@ -146,7 +146,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name at.technikum.mti.fancycoverflow:scaleDownGravity
         */
-        public static final int FancyCoverFlow_scaleDownGravity = 4;
+        public static int FancyCoverFlow_scaleDownGravity = 4;
         /**
           <p>This symbol is the offset where the {@link at.technikum.mti.fancycoverflow.R.attr#unselectedAlpha}
           attribute's value can be found in the {@link #FancyCoverFlow} array.
@@ -160,7 +160,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name at.technikum.mti.fancycoverflow:unselectedAlpha
         */
-        public static final int FancyCoverFlow_unselectedAlpha = 0;
+        public static int FancyCoverFlow_unselectedAlpha = 0;
         /**
           <p>This symbol is the offset where the {@link at.technikum.mti.fancycoverflow.R.attr#unselectedSaturation}
           attribute's value can be found in the {@link #FancyCoverFlow} array.
@@ -174,7 +174,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name at.technikum.mti.fancycoverflow:unselectedSaturation
         */
-        public static final int FancyCoverFlow_unselectedSaturation = 1;
+        public static int FancyCoverFlow_unselectedSaturation = 1;
         /**
           <p>This symbol is the offset where the {@link at.technikum.mti.fancycoverflow.R.attr#unselectedScale}
           attribute's value can be found in the {@link #FancyCoverFlow} array.
@@ -188,6 +188,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name at.technikum.mti.fancycoverflow:unselectedScale
         */
-        public static final int FancyCoverFlow_unselectedScale = 2;
+        public static int FancyCoverFlow_unselectedScale = 2;
     };
 }

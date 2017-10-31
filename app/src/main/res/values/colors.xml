@@ -11,7 +11,7 @@
     <color name="trc_font">#353535</color>
 
     <!-- frg背景 -->
-    <color name="frgBgColor">#f8f8f8</color>
+    <color name="frgBgColor">#f4f4f4</color>
 
     <!-- frg下划线颜色 -->
     <color name="frgtitleColor">#e0e0e0</color>

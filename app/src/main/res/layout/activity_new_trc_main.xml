@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.administrator.text1.utils.view.FixRatioFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:contentDescription="FinancialBanner"
+        app:trcBaseOnWidth="true"
+        app:trcRatio="0.3333">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/trcBannerViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="@drawable/ad_default_jr" />
+
+        <com.example.administrator.text1.utils.view.Indicator
+            android:id="@+id/trcBannerIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_margin="10dp"
+            android:background="#00000000"
+            android:padding="1dp"
+            app:trcDrawableDefault="@drawable/dot_white"
+            app:trcDrawableHeight="5dp"
+            app:trcDrawableSelected="@drawable/dot_black"
+            app:trcDrawableWidth="5dp"
+            app:trcInterval="7dp" />
+    </com.example.administrator.text1.utils.view.FixRatioFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_right_color"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/trcType1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="为你推荐"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/trcType2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="母婴专区"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/trcType3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="美容美妆"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/trcType4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="营养保健"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/trcType5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="全球美食"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/trcType6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="数码家电"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/trcContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

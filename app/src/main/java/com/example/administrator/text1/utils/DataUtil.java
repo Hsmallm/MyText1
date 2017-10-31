@@ -1,8 +1,12 @@
 package com.example.administrator.text1.utils;
 
 import com.example.administrator.text1.model.ExampleModel;
+import com.example.administrator.text1.model.birthday.DayModel;
+import com.example.administrator.text1.model.birthday.MonthModel;
+import com.example.administrator.text1.model.birthday.YearModel;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 /**
@@ -32,5 +36,31 @@ public class DataUtil {
             }
         }
         return exampleModelLists;
+    }
+
+    public static List<YearModel> getData2() {
+        List<YearModel> dateList = new ArrayList<>();//年
+        for (int i = 1950; i < 2018; i++) {
+            final YearModel yearModel = new YearModel(i + "年");
+            dateList.add(yearModel);
+            for (int j = 0; j < 12; j++) {
+                MonthModel monthModel = new MonthModel((j+1)+"月");
+                yearModel.addMonthModel(monthModel);
+                int maxDay = getMaxDay(i, j);
+                for (int n = 1; n < maxDay + 1; n++) {
+                    DayModel dayModel = new DayModel(n+"日");
+                    monthModel.addDayModel(dayModel);
+                }
+            }
+        }
+        return dateList;
+    }
+
+    public static int getMaxDay(int year, int month) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.clear(Calendar.DAY_OF_MONTH);
+        calendar.set(Calendar.MONTH, month);
+        calendar.set(Calendar.YEAR, year);
+        return calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
     }
 }

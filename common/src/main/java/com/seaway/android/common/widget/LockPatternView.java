@@ -132,7 +132,7 @@ public class LockPatternView extends View {
 		 * @param column
 		 *            The column of the cell.
 		 */
-		private Cell(int row, int column) {
+		public Cell(int row, int column) {
 			checkRange(row, column);
 			this.row = row;
 			this.column = column;

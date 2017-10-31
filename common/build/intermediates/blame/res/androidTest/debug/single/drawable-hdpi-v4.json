@@ -1,14 +1,14 @@
 [
     {
-        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\drop_down_list_arrow.png",
-        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\drop_down_list_arrow.png"
+        "merged": "F:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ui_waiting_progress_icon.png",
+        "source": "F:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ui_waiting_progress_icon.png"
     },
     {
-        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ic_launcher.png",
-        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ic_launcher.png"
+        "merged": "F:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "F:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ic_launcher.png"
     },
     {
-        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\ui_waiting_progress_icon.png",
-        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\ui_waiting_progress_icon.png"
+        "merged": "F:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\drop_down_list_arrow.png",
+        "source": "F:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\drop_down_list_arrow.png"
     }
 ]

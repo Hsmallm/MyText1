@@ -7,55 +7,55 @@
     </declare-styleable>
 
     <declare-styleable name="TextSimpleGridLayout">
-        <attr name="grid_column" format="integer"/>
-        <attr name="grid_row_height" format="dimension"/>
-        <attr name="grid_item_height_width_ratio" format="float"/>
-        <attr name="grid_divider_width" format="dimension"/>
+        <attr name="grid_column" format="integer" />
+        <attr name="grid_row_height" format="dimension" />
+        <attr name="grid_item_height_width_ratio" format="float" />
+        <attr name="grid_divider_width" format="dimension" />
     </declare-styleable>
 
     <declare-styleable name="TextFrameLayout">
-        <attr name="text_baseonwith" format="boolean"/>
-        <attr name="text_ratio" format="float"/>
+        <attr name="text_baseonwith" format="boolean" />
+        <attr name="text_ratio" format="float" />
     </declare-styleable>
 
     <declare-styleable name="SlideMenu">
-        <attr name="slide_menu_padding" format="dimension"/>
+        <attr name="slide_menu_padding" format="dimension" />
     </declare-styleable>
 
     <declare-styleable name="Indicator">
-        <attr name="testcolor" format="color"/>
+        <attr name="testcolor" format="color" />
     </declare-styleable>
 
     <declare-styleable name="TestIndicator">
-        <attr name="visib_count" format="integer"/>
+        <attr name="visib_count" format="integer" />
     </declare-styleable>
 
     <declare-styleable name="TopBar">
-        <attr name="titleText" format="string"/>
-        <attr name="titleTextSize" format="dimension"/>
-        <attr name="titleTxtColor" format="color"/>
+        <attr name="titleText" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTxtColor" format="color" />
 
-        <attr name="leftText" format="string"/>
-        <attr name="leftTextColor" format="reference|color"/>
-        <attr name="leftBackground" format="reference|color"/>
-        <attr name="leftTextSize" format="dimension"/>
+        <attr name="leftText" format="string" />
+        <attr name="leftTextColor" format="reference|color" />
+        <attr name="leftBackground" format="reference|color" />
+        <attr name="leftTextSize" format="dimension" />
 
-        <attr name="rightText" format="string"/>
-        <attr name="rightTextColor" format="reference|color"/>
-        <attr name="rightBackground" format="reference|color"/>
-        <attr name="rightTextSize" format="dimension"/>
+        <attr name="rightText" format="string" />
+        <attr name="rightTextColor" format="reference|color" />
+        <attr name="rightBackground" format="reference|color" />
+        <attr name="rightTextSize" format="dimension" />
     </declare-styleable>
 
     <declare-styleable name="FixRatio">
-        <attr name="ratio" format="float"/>
-        <attr name="bathOnWidth" format="boolean"/>
-        <attr name="matchDrawableRatio" format="boolean"/>
+        <attr name="ratio" format="float" />
+        <attr name="bathOnWidth" format="boolean" />
+        <attr name="matchDrawableRatio" format="boolean" />
     </declare-styleable>
-    
+
     <declare-styleable name="SlipleGrid">
-        <attr name="grid_row2" format="integer"/>
-        <attr name="grid_column2" format="integer"/>
-        <attr name="grid_row_height2" format="dimension"/>
+        <attr name="grid_row2" format="integer" />
+        <attr name="grid_column2" format="integer" />
+        <attr name="grid_row_height2" format="dimension" />
     </declare-styleable>
 
     <declare-styleable name="FormLayout">
@@ -65,5 +65,32 @@
         <attr name="relative_top" format="float" />
         <attr name="w_h_ratio" format="float" />
         <attr name="base_on_width" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberPicker">
+        <attr name="lineColorWheel" format="color" />
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selecredTextColor" format="color" />
+        <attr name="selecredTextSize" format="dimension" />
+        <attr name="unitHight" format="dimension" />
+        <attr name="itemNumber" format="integer" />
+        <attr name="maskHight" format="dimension" />
+        <attr name="noEmpty" format="boolean" />
+        <attr name="isEnable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Ratio">
+        <attr name="trcRatio" format="float" />
+        <attr name="trcBaseOnWidth" format="boolean" />
+        <attr name="trcMatchDrawableRatio" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TrcIndicator">
+        <attr name="trcDrawableDefault" format="reference" />
+        <attr name="trcDrawableSelected" format="reference" />
+        <attr name="trcInterval" format="dimension" />
+        <attr name="trcDrawableWidth" format="dimension" />
+        <attr name="trcDrawableHeight" format="dimension" />
     </declare-styleable>
 </resources>

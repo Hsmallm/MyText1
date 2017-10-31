@@ -1,26 +1,26 @@
 [
     {
-        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ui_default_confirm_dialog.xml",
-        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\ui_default_confirm_dialog.xml"
+        "merged": "F:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\footer_view.xml",
+        "source": "F:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\footer_view.xml"
     },
     {
-        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ui_default_confirm_dialog2.xml",
-        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\ui_default_confirm_dialog2.xml"
+        "merged": "F:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ui_default_confirm_dialog.xml",
+        "source": "F:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\ui_default_confirm_dialog.xml"
     },
     {
-        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ui_default_waiting_dialog.xml",
-        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\ui_default_waiting_dialog.xml"
+        "merged": "F:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ui_default_waiting_dialog.xml",
+        "source": "F:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\ui_default_waiting_dialog.xml"
     },
     {
-        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\header_view.xml",
-        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\header_view.xml"
+        "merged": "F:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\web_view.xml",
+        "source": "F:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\web_view.xml"
     },
     {
-        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\web_view.xml",
-        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\web_view.xml"
+        "merged": "F:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\header_view.xml",
+        "source": "F:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\header_view.xml"
     },
     {
-        "merged": "E:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\footer_view.xml",
-        "source": "E:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\footer_view.xml"
+        "merged": "F:\\Text1\\common\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\ui_default_confirm_dialog2.xml",
+        "source": "F:\\Text1\\common\\build\\intermediates\\bundles\\debug\\res\\layout\\ui_default_confirm_dialog2.xml"
     }
 ]

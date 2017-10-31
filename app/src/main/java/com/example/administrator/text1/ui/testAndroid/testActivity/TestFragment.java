@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.administrator.text1.R;
+import com.example.administrator.text1.ui.testOther.ChooseDateDialog;
 
 /**
  * 功能描述：测试Fragment的生命周期
@@ -87,10 +86,12 @@ public class TestFragment extends Fragment{
         txt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager fm = getFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.add(R.id.content,new SecondFragment());
-                ft.commitAllowingStateLoss();
+//                FragmentManager fm = getFragmentManager();
+//                FragmentTransaction ft = fm.beginTransaction();
+//                ft.add(R.id.content,new SecondFragment());
+//                ft.commitAllowingStateLoss();
+                ChooseDateDialog dialog = ChooseDateDialog.newDialogFragment();
+                dialog.show(getFragmentManager(),"");
             }
         });
     }
