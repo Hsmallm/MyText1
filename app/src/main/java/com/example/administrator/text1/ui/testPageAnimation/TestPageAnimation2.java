@@ -16,6 +16,7 @@ import com.seaway.android.common.toast.Toast;
  * 功能描述：Activity之间实现页面切换动画：overridePendingTransition();
  * Created by hzhm on 2016/8/10.
  */
+//@PortalPath("TestPageAnimation2")
 public class TestPageAnimation2 extends Activity implements View.OnClickListener {
 
     private LinearLayout lin;

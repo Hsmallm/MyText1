@@ -1,4 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="base_toolbar_height">50dp</dimen>
+    <color name="base_toolbar_background_color">#f8f8f8</color>
+
+    <style name="BaseToolbarStyle">
+        <item name="android:background">@color/base_toolbar_background_color</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/base_toolbar_height</item>
+    </style>
+
+    <style name="BaseToolbarIconStyle">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
 
     <!-- Base application theme. -->
     <!--全屏模式，仅有任务栏，无主题栏目-->
@@ -10,6 +26,13 @@
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="TestAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <!--全屏模式，无任务栏-->
@@ -128,4 +151,15 @@
         <item name="tabTextAppearance">@style/AccountTabLayoutTextApperence</item>
         <item name="tabSelectedTextColor">#FFFFFFFF</item>
     </style>
+
+    <style name="FruitActivityTheme" parent="TestAppTheme">
+    </style>
+
+    <style name="Material_TextAppearance_Title" parent="android:TextAppearance.Material.Title" tools:ignore="NewApi">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="MaterialAnimations.TextAppearance.Title.Inverse" parent="android:TextAppearance.Material.Title">
+        <item name="android:textColor">?android:textColorPrimaryInverse</item>
+    </style>
+
 </resources>

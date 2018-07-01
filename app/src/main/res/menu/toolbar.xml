@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--always:永远显示在ToolBar中，如果屏幕空间不足则不显示-->
+    <!--ifRoom:如果屏幕空间足够则显示在ToolBar，不够则显示在菜单中-->
+    <!--never:永远显示在菜单中-->
+    <item
+        android:id="@+id/back"
+        android:icon="@drawable/trqq"
+        android:title="BackUp"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/wechat_fav"
+        android:title="Delete"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/trc_category_gray"
+        android:title="Setting"
+        app:showAsAction="never"/>
+</menu>

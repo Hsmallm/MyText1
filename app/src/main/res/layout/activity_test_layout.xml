@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@color/blue"-->
+    <!--android:text="LinearLayout布局layout_weight比重属性的使用"/>-->
+    <!---->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<EditText-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"/>-->
+
+    <!--<Button-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="send"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<EditText-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"/>-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="send"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@color/blue"-->
+    <!--android:gravity="center"-->
+    <!--android:text="RelativeLayout相对布局中相关属性的使用" />-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:text="1" />-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:text="2" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:text="3" />-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:text="4" />-->
+
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:text="5" />-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/btn3"-->
+    <!--android:layout_toLeftOf="@+id/btn3"-->
+    <!--android:text="6" />-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/btn3"-->
+    <!--android:layout_toRightOf="@+id/btn3"-->
+    <!--android:text="7" />-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/btn3"-->
+    <!--android:layout_toLeftOf="@+id/btn3"-->
+    <!--android:text="8" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn9"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/btn3"-->
+    <!--android:layout_toRightOf="@+id/btn3"-->
+    <!--android:text="9" />-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/btn9"-->
+    <!--android:layout_alignTop="@+id/btn9"-->
+    <!--android:text="10" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@color/blue"-->
+    <!--android:gravity="center"-->
+    <!--android:text="百分百布局相关使用" />-->
+
+    <!--<android.support.percent.PercentFrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<Button-->
+    <!--android:layout_gravity="top|left"-->
+    <!--android:text="Button1"-->
+    <!--app:layout_heightPercent="50%"-->
+    <!--app:layout_widthPercent="50%" />-->
+
+    <!--<Button-->
+    <!--android:layout_gravity="top|right"-->
+    <!--android:text="Button2"-->
+    <!--app:layout_heightPercent="50%"-->
+    <!--app:layout_widthPercent="50%" />-->
+
+    <!--<Button-->
+    <!--android:layout_gravity="bottom|left"-->
+    <!--android:text="Button3"-->
+    <!--app:layout_heightPercent="50%"-->
+    <!--app:layout_widthPercent="50%" />-->
+
+    <!--<Button-->
+    <!--android:layout_gravity="bottom|right"-->
+    <!--android:text="Button4"-->
+    <!--app:layout_heightPercent="50%"-->
+    <!--app:layout_widthPercent="50%" />-->
+
+    <!--</android.support.percent.PercentFrameLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="使用include引入复用布局界面" />
+
+    <include layout="@layout/activity_test_title" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="使用自定义布局界面" />
+
+    <com.example.administrator.text1.newAndroid.layout.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_content_transitions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        style="@style/Material_TextAppearance_Title"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/blue"
+        android:elevation="4dp">
+
+        <TextView
+            style="@style/MaterialAnimations.TextAppearance.Title.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity切换" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/image_bgg"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@+id/toolBar"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_bgg"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:text="65tr456754675756735676647567456746776765765756756765567657" />
+</RelativeLayout>

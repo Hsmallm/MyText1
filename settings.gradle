@@ -1,4 +1,4 @@
-include ':app', ':common', ':umengshare2', ':libzxing', ':PushSDK'
+include ':app', ':common', ':umengshare2', ':libzxing', ':PushSDK', ':mylibrary', ':myapplication', ':module'
 
 include ':library'
 include ':library'

@@ -1,6 +1,7 @@
 package com.example.administrator.text1.newAndroid.intent;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -29,9 +30,12 @@ public class TestFirstActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TestFirstActivity.this, TestSecondActivity.class);
+                Intent intent = new Intent(Intent.ACTION_VIEW);
                 //startActivityForResult：用于启动一个活动，第一个参数为intent；第二个参数为requestCode,即为请求的唯一标识码
-                startActivityForResult(intent, 1);
+//                startActivityForResult(intent, 1);
+                intent.setData(Uri.parse("teee://111"));
+                startActivity(intent);
+
             }
         });
     }
@@ -39,9 +43,9 @@ public class TestFirstActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         //requestCode：请求码，即为startActivityForResult时传递过来的唯一标识请求码
-        if (requestCode == 1){
+        if (requestCode == 1) {
             //requestCode：返回码，即为setResult时传递过来的唯一标识返回码
-            if (resultCode == RESULT_OK){
+            if (resultCode == RESULT_OK) {
                 String returnData = data.getStringExtra("data return");
                 ToastUtil.showNormalToast(returnData);
             }

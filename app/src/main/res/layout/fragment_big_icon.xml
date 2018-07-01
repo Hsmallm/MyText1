@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/shared_big_circle"
+        android:transitionName="shared_circle_"
+        android:layout_width="100dp"
+        android:src="@drawable/cuteboy"
+        android:layout_gravity="center_vertical"
+        android:layout_height="100dp" />
+
+</FrameLayout>

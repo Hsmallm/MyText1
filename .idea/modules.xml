@@ -9,6 +9,9 @@
       <module fileurl="file://$PROJECT_DIR$/fancyCoverFlow_library/fancyCoverFlow_library.iml" filepath="$PROJECT_DIR$/fancyCoverFlow_library/fancyCoverFlow_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/libzxing/libzxing.iml" filepath="$PROJECT_DIR$/libzxing/libzxing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module/module.iml" filepath="$PROJECT_DIR$/module/module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/umengshare2/umengshare2.iml" filepath="$PROJECT_DIR$/umengshare2/umengshare2.iml" />
     </modules>
   </component>
