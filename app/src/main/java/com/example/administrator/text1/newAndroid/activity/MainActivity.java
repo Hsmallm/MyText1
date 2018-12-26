@@ -86,6 +86,12 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG,"onResume");
     }
 
+    @Override
+    public void startActivityForResult(Intent intent, int requestCode, @Nullable Bundle options) {
+        super.startActivityForResult(intent, requestCode, options);
+        Log.d(TAG,"startActivityForResult");
+    }
+
     /**
      * onPause()：系统准备启动另外一个活动时候调用
      */
@@ -96,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * onStop()：当前Activity完全不可见时候被调用
+     * onStop()：当前Activity完全不可见时候被调用s
      */
     @Override
     protected void onStop() {

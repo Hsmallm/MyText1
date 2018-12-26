@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="Test Log"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_log_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="log_v" />
+
+    <Button
+        android:id="@+id/bt_log_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="log_d" />
+
+    <Button
+        android:id="@+id/bt_log_i"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="log_i" />
+
+    <Button
+        android:id="@+id/bt_log_w"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="log_w" />
+
+    <Button
+        android:id="@+id/bt_log_e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="log_e" />
+</LinearLayout>
